@@ -11,3 +11,11 @@ function drawGrid() {
 }
 
 drawGrid()
+
+pixels = document.querySelectorAll('.drawDiv')
+pixels.forEach((pixel) => {
+    pixel.addEventListener('mouseover', () => {
+        pixel.style.backgroundColor = "blue"
+    })
+
+})
